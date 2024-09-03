@@ -61,7 +61,8 @@ You will also need to get the **GCC ARM compiler/linker**
 
   
 
-```sudo apt install arm-none-eabi-gcc
+```
+sudo apt install arm-none-eabi-gcc
 If the package is not available, then follow
 Goto: https://developer.arm.com/downloads/-/gnu-rm and download: gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2 or do a
 wget as mentioned below:
