@@ -128,6 +128,8 @@ finished `.bin` to be named as.
 ```
 git clone git://git.code.sf.net/p/openocd/code openocd.git
 cd openocd.git
+git submodule init
+git submodule update
 ./bootstrap
 ./configure --prefix=/usr --enable-maintainer-mode --enable-stlink  --enable-ti-icdi
 make
