@@ -94,7 +94,8 @@ this is to allow any program to read or write to your TM4C Launchpad board,i.e y
 
 - Set the `TARGET` variable in the Makefile to whatever you want the
 finished `.bin` to be named as.
-
+- export MCU=TM4C123GH6PM
+  
 - Run `make`
 
 - The object files will be in an `obj` folder
@@ -115,8 +116,7 @@ finished `.bin` to be named as.
 git clone git://git.code.sf.net/p/openocd/code openocd.git
 cd openocd.git
 ./bootstrap
-./configure --prefix=/usr --enable-maintainer-mode --enable-stlink 
---enable-ti-icdi
+./configure --prefix=/usr --enable-maintainer-mode --enable-stlink  --enable-ti-icdi
 make
 sudo make install
  ```
