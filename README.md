@@ -61,7 +61,19 @@ You will also need to get the **GCC ARM compiler/linker**
 
   
 
-```sudo apt install arm-none-eabi-gcc```
+```sudo apt install arm-none-eabi-gcc
+If the package is not available, then follow
+Goto: https://developer.arm.com/downloads/-/gnu-rm and download: gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2 or do a
+wget as mentioned below:
+cd /opt
+wget "https://developer.arm.com/-/media/Files/downloads/gnu-rm/10.3-2021.10/gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2"
+tar -jxf gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2
+rm gcc-arm-none-eabi-10.3-2021.10-x86_64-linux.tar.bz2
+export PATH=$PATH:/opt/gcc-arm-none-eabi-10.3-2021.10/bin
+
+Reference: https://askubuntu.com/questions/1243252/how-to-install-arm-none-eabi-gdb-on-ubuntu-20-04-lts-focal-fossa
+
+```
 
 And a flasher like **lm4flash**
 
